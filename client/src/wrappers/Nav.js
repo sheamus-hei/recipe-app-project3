@@ -40,13 +40,13 @@ export default function Nav(props) {
     return(
         <nav>
             <ul className="App-nav">
-                <li className="App-nav-link">
-                    <a href="https://github.com/papadavis47/recipe-app-project3" className="App-link">About</a>
-                </li>
+                {links}
                 <li className="App-nav-link">
                     <Link to="/authors" className="App-link">Authors</Link>
                 </li>
-                {links}
+                <li className="App-nav-link">
+                    <a href="https://github.com/erik-hei/recipe-app-project3" target="_blank" rel="noopener noreferrer" className="App-link">About</a>
+                </li>
             </ul>
         </nav>
     )
