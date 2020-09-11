@@ -34,15 +34,21 @@ export default function Profile(props) {
     }
 
     console.log("the user is 😎", props.user)
+    console.log('This is the user recipes')
+    console.log(userRecipes)
 
-    let recipeLinkList = (<p className="dark-bg">You haven't posted any recipes yet</p>);
-    if (userRecipes && userRecipes.length > 0) {
-        recipeLinkList = userRecipes.map(recipe => {
-            return (
-                <Thumbnail recipe={recipe} isAuthor={true} />
-            )  
-        });
-    }  
+    let recipeLinkList = (userRecipes && userRecipes.length > 0) ? 
+        userRecipes.map(recipe => <Thumbnail recipe={recipe} isAuthor={true} />):
+        (<p className="dark-bg">You haven't posted any recipes yet</p>);
+
+    // if (userRecipes && userRecipes.length > 0) {
+    //     console.log("USERRECIPES", userRecipes)
+    //     recipeLinkList = userRecipes.map(recipe => {
+    //         return (
+    //             <Thumbnail recipe={recipe} isAuthor={true} />
+    //         )  
+    //     });
+    // }  
 
     let favesLinkList = (<p className="dark-bg">No Favorites to show</p>);
     if (userFaves && userFaves.length > 0) {

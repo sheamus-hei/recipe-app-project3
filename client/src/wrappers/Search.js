@@ -25,7 +25,7 @@ export default function Search(props) {
         <div className="App-search">
             <form>
                 <label className="search-label">Type in keywords to discover new recipes!</label>
-                <button className="search-button" type="submit"><Link onClick={handleSubmit} to="/recipes" alt="Search">🔍</Link></button>
+                <button className="search-button" onSubmit={handleSubmit} type="submit"><Link onClick={handleSubmit} to="/recipes" alt="Search">🔍</Link></button>
                 <input type="text" className="search-field" placeholder="Type in keywords to discover new recipes!" name="search" onChange={e => setFormInput(e.target.value)} required />
             </form>
         </div>
