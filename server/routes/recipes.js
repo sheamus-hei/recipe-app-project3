@@ -59,8 +59,13 @@ router.post("/", (req, res) => {
         tags: newRecipe.tags
     })
     .then(recipe => {
-        console.log(req.body);
-        res.send(recipe);
+        console.log("Recipe", recipe)
+        db.User.findByIdAndUpdate(recipe.userId,
+            {$addToSet: { userRecipes: recipe._id }},
+            {safe: true}
+        )
+        .then((updated)=>res.send(recipe))
+        .catch(err=>res.send({ message: 'Error in adding  new recipe to user', err}));
     })
     .catch(err=>res.send({ message: 'Error in creating one recipe', err}));
 })

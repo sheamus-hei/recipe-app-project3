@@ -18,7 +18,6 @@ const bcrypt = require('bcrypt')
 
 // Route to update user's favRecipes
 router.post("/addFav", (req, res) => {
-    console.log("👻")
     db.User.findByIdAndUpdate(req.body.userId,
         {$addToSet: { favRecipes: req.body.recipeId }},
         {safe: true}
