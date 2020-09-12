@@ -10,17 +10,12 @@
   "author": "Erik, John, Mac",
   "license": "ISC",
   "scripts": {
-      "postinstall": "run-p install:server install:client",
-      "install:server": "cd server && npm install",
-      "install:client": "cd client && npm install",
   
       "start": "run-p start:server start:client",
-      "start:server": "npm run start --prefix server",
+      "start:server": "node server/server.js --prefix server",
       "start:client": "npm run start --prefix client",
   
-      "build": "run-p build:server build:client",
-      "build:server": "cd server && npm run build",
-      "build:client": "cd client && npm run build"
+      "build": "cd client && npm run build"
     },
     "devDependencies": {
       "npm-run-all": "^4.0.2"
