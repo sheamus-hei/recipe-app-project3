@@ -1,0 +1,28 @@
+
+{
+  "name": "noscroll",
+  "version": "1.0.0",
+  "description": "Project3 SEI 29",
+  "main": "server/server.js",
+  "engines": {
+    "node": "v13.7.0"
+  },
+  "author": "Erik, John, Mac",
+  "license": "ISC",
+  "scripts": {
+      "postinstall": "run-p install:server install:client",
+      "install:server": "cd server && npm install",
+      "install:client": "cd client && npm install",
+  
+      "start": "run-p start:server start:client",
+      "start:server": "npm run start --prefix server",
+      "start:client": "npm run start --prefix client",
+  
+      "build": "run-p build:server build:client",
+      "build:server": "cd server && npm run build",
+      "build:client": "cd client && npm run build"
+    },
+    "devDependencies": {
+      "npm-run-all": "^4.0.2"
+    }
+  }
