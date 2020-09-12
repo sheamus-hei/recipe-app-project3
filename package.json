@@ -10,12 +10,11 @@
   "author": "Erik, John, Mac",
   "license": "ISC",
   "scripts": {
-      "postinstall": "cd server && npm install",
-  
-      "start": "node server/server.js",
-    
-  
-      "build": "cd server && npm run build"
+    "predeploy": "cd client && npm run build",
+"deploy": "gh-pages -b gh-pages -d client/build",
+      "server-postinstall": "cd server && npm install",
+      "server-start": "node server/server.js",
+      "server-build": "cd server && npm run build"
     },
     "devDependencies": {
       "npm-run-all": "^4.0.2"
