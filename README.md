@@ -8,12 +8,12 @@
 
 *Micro Blogging MERN Application for Recipes*  - *Group Project for SEI 29 Seattle Unit 3*
 
-[Live Demo HERE](https://erik-hei.github.io/noscroll-client/#/)
+[Live Demo HERE](https://sheamus-hei.github.io/noscroll-client/#/)
 
 
 ## Installation Instructions
 
-NOTICE: Client folder is deprecated. Submit any pull requests to the separate client repo [here](https://github.com/erik-hei/noscroll-client). 
+NOTICE: Client folder is deprecated. Submit any pull requests to the separate client repo [here](https://github.com/sheamus-hei/noscroll-client). 
 
 ### Server
 
@@ -23,7 +23,7 @@ NOTICE: Client folder is deprecated. Submit any pull requests to the separate cl
 
 ### Client
 
-1. Fork and/or clone the client repo at [noscroll-client](https://github.com/erik-hei/noscroll-client).
+1. Fork and/or clone the client repo at [noscroll-client](https://github.com/sheamus-hei/noscroll-client).
 2. Run `npm install`.
 3. `npm start` to run the React client. 
 
@@ -49,7 +49,7 @@ Project began on day of team selection announcements. Last day of in campus inst
 
 ### 2nd and 3rd Days - Saturday and Sunday, March 14th & March 15th
 
-We made a final decision on idea - a No Scroll Recipe App that would allow users to see an entire recipe without scrolling. Users would able to save recipes and favorite recipes, share recipes, etc. Erik showed the team some initial wireframes.
+We made a final decision on idea - a No Scroll Recipe App that would allow users to see an entire recipe without scrolling. Users would able to save recipes and favorite recipes, share recipes, etc. Sheamus showed the team some initial wireframes.
 
 <img src='wireframes/recipewireframe.png' alt='recipe NYT' height=400/>
 
@@ -114,10 +114,10 @@ Continued coding routes and structure for MongoDB schemas. Began testing routes 
 |JOHN|PUT|/recipes/:id|Update recipe in db using form data|
 |JOHN|DELETE|/recipes/:id|Delete a recipe from db|
 |JOHN|PUT|/profile|Update user in db
-|ERIK|GET|/authors|Retrieve all authors from db|
-|ERIK|GET|/authors/:id| Retrieve an author from db|
-|ERIK|POST|/auth/login|Log user in|
-|ERIK|POST|/auth/signup|Create user in db
+|SHEAMUS|GET|/authors|Retrieve all authors from db|
+|SHEAMUS|GET|/authors/:id| Retrieve an author from db|
+|SHEAMUS|POST|/auth/login|Log user in|
+|SHEAMUS|POST|/auth/signup|Create user in db
 
 ### 6th Day - Wednesday March 18th
 
@@ -131,12 +131,12 @@ Began working on client side routes in React.
 |MAC|GET|/recipes/new|Show a form to make a new recipe|
 |MAC|GET|/recipes/:id|Show single recipe|
 |JOHN|GET|recipes/:id/edit|Show a form to edit a recipe|
-|ERIK|GET|/profile|Show user profile|
-|ERIK|GET|/profile/edit|Show a form to edit profile|
-|ERIK|GET|/authors|Show list of all users who have posted recipes|
-|ERIK|GET|/authors/:id|Show the profile of one author |
-|ERIK|GET|/auth/login|Show a form to login|
-|ERIK|GET|/auth/signup|Show a form to sign up|
+|SHEAMUS|GET|/profile|Show user profile|
+|SHEAMUS|GET|/profile/edit|Show a form to edit profile|
+|SHEAMUS|GET|/authors|Show list of all users who have posted recipes|
+|SHEAMUS|GET|/authors/:id|Show the profile of one author |
+|SHEAMUS|GET|/auth/login|Show a form to login|
+|SHEAMUS|GET|/auth/signup|Show a form to sign up|
 
 
 ### 7th Day - Thursday March 19
